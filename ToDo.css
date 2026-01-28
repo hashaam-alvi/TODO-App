@@ -1,0 +1,172 @@
+        .container {
+            margin: 5% auto;
+            padding: 5% 3%;
+            border: 07px rgb(145, 145, 238) solid;
+            text-align: center;
+
+        }
+
+        .taskName {
+            border-radius: 15px;
+            padding: 5px 10px;
+            width: 60%;
+            color: rgb(5, 5, 171);
+        }
+
+        .enterB {
+            border-radius: 15px;
+            padding: 5px 10px;
+            width: 20%;
+            font-weight: 800;
+            border: 5px rgb(159, 159, 234) double;
+            color: blue;
+        }
+
+        .enterB:hover {
+            background-color: rgb(159, 159, 234);
+            color: white;
+            border: 5px blue solid;
+            transition: color 0.5s ease, transform 3s ease;
+        }
+
+        .OList {
+            list-style-type: decimal-leading-zero;
+            padding-left: 20px;
+        }
+
+        .OList li {
+            display: list-item;
+            margin: 10px 0;
+            padding-left: 0.2em;
+        }
+
+        .OList li .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            /* align to top if text wraps */
+            flex-wrap: wrap;
+            /* allow wrapping within li if needed */
+        }
+
+        .OList li .content .left {
+            flex: 1;
+            /* allow left side to take available space */
+            text-align: left;
+            /* align text to the left side */
+            word-wrap: break-word;
+            /* breaks very long words */
+            overflow-wrap: anywhere;
+            /* modern alternative for wrapping */
+            white-space: normal;
+            /* allow multi-line text */
+            margin-right: 10px;
+            /* spacing before buttons */
+        }
+
+        li button {
+            margin-left: 8px;
+            border-radius: 10px;
+            padding: 4px 10px;
+            /* margin:0 5px 0 10px; */
+            border: 2px black solid;
+            font-size: medium;
+            font-weight: bold;
+            width: 5em;
+        }
+
+
+        .deleteTask:hover {
+            background-color: red;
+
+        }
+
+        .editTask:hover {
+            background-color: rgb(211, 211, 54);
+        }
+
+        .doneTask:hover {
+            background-color: green;
+        }
+
+        li button:hover {
+            color: white;
+            font-size: medium;
+            font-weight: bold;
+            border: 2px white solid;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: color 0.5s ease, transform 0.5s ease;
+        }
+
+        #showForm, #getTodo {
+            margin-top: 12px;
+            border-radius: 10px;
+            padding: 10px;
+            font-weight: 1000;
+            color: blue;
+            border: 5px blue solid;
+        }
+
+        #showForm:hover , #getTodo:hover{
+            background-color: blue;
+            color: white;
+            transition: color 0.5s ease, transform 3s ease;
+
+        }
+        
+        .delBtn:hover{
+            background-color: red;
+            color: white;
+            transition: color 0.5s ease, transform 3s ease;
+        }
+
+        .editBtn:hover{
+            background-color: rgb(251, 255, 41);
+            color: rgb(82, 82, 82);
+            transition: color 0.5s ease, transform 3s ease;
+        }
+
+        .doneBtn:hover{
+            background-color: green;
+            color: white;
+            transition: color 0.5s ease, transform 3s ease;
+        }
+
+        .title span {
+            color: blue;
+        }
+
+        li::marker {
+            font-weight: 900;
+        }
+
+        /* Disabline Li */
+        .completed {
+            opacity: 0.6;
+            text-decoration: line-through;
+            pointer-events: none;
+        }
+
+        .editText{
+            
+           width : 100%;
+           height : 100px;
+           border-radius : 10px;
+           padding : 3px 5px;
+           color : rgb(5, 5, 171);
+        }
+
+        #jsonView {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 6px;
+            max-height: 200px;
+            overflow: auto;
+            font-size: 12px;
+        }
+        .JsonHead{
+            text-align: center;
+
+    
+        }
